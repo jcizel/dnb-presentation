@@ -1,0 +1,1092 @@
+<!--  -->		  <!--  --><!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Anatomy of Bank Distress (Cizel et al, 2014)</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = 'css/print/pdf.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+    <!--[if lt IE 9]>
+	    <script src="lib/js/html5shiv.js"></script>
+	    <![endif]-->
+	       </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+	<section>
+	  <section>
+	    <h2>Anatomy of Bank Distress </h2>
+	    <h3>The Information Content of Accounting Fundamentals Within and
+	      Across Countries</h3>
+	    <p>
+	      <small> By <a href="http://jankocizel.com">Janko Cizel</a> /
+		Edward Altman / Herbert Rijken </small>
+	    </p>
+
+	    <aside class="notes"> 
+	      <!-- TALK BEGINS WITH THE SESSION LEADER WHO INTRODUCES THE SPEAKER
+		--> 
+	      <p>Thank you.
+		
+	      <p>Hi guys. Over this talk, I'll speak about my recent joint paper
+		with Ed Altman from the NYU and my supervisor from the VU
+		University in Amsterdam, titled: [Anatomy of ...]. 
+
+	      <p>In a nutshell, the paper explores the quality of accounting
+		disclosure reported by European and the U.S. banks during the
+		recent financial crisis.
+	    </aside>
+	  </section>
+
+	  <!-- <section> -->
+	  <!--   <section> -->
+          <!--     <h2>Table of Contents</h2> -->
+          <!--     <nav id="presentable-toc" class="revealjs"></nav> -->
+	  <!--   </section> -->
+	  <!-- </section> -->
+	</section>
+
+	<section>
+	  <section>
+	    <h2>How reliable is bank accounting disclosure?</h2>
+	    <aside class="notes">
+	      <p>The central question that guided our research in this project
+	      was this: How reliable is bank accounting disclosure?	    	   
+	    </aside>
+	  </section>
+	  
+	  <section>
+	    <h3>Framework</h3>
+
+	    <p class="fragment"> <b>Accounting discretion</b> $\Longrightarrow$
+	    ability to misrepresent true performance
+
+	    <p class="fragment"> <b>Incentives</b> to inflate true performance,
+	    especially in the state of financial distress.
+
+	    <p class="fragment"> <b>Consequence</b>: "jamming" of the accounting
+	    signal. 
+
+	    <p class="fragment">In an extreme case, the accounting signal may lose its ability to
+	    discriminate between healthy and unhealthy institutions.
+
+	      <aside class="notes">
+		<p> The way we think about this question is the following.
+
+		<p> First, in practice, banks possess substential discretion over their
+		  reported accounting performance. As an example of this, one can
+		  think of the banks' flexibility in the domains of loan-loss
+		  provisioning, and the calculation of asset risk weights, to name a
+		  few. The accounting discretion gives banks the ability to
+		  misrepresent their true performance. 
+
+		<p> Apart from their capacity to mis-represent performance, a plausible
+		  case can be made that under certain conditions, banks also have the 
+		  <b>incentives</b> to mis-report their true performance. Specifically, a
+		  bank close to distress may use accounting discretion to improve its
+		  reported regulatory capital ratio in order to avoid negative
+		  attention of its regulator, or to avoid a run on its funding.
+
+		<p> Now, assuming that banks in distress are systematically more likely
+		  to use accounting discretion than their healthier peers, one obtains
+		  a classical case of so-called signal jamming: namely, that the
+		  observed accounting signal loses its ability to discriminate between
+		  healthy and unhelathy banks. In the extreme case, in which the
+		  reported accounts of the distressed and non-distressed banks are
+		  indistinguishable, the information value of the accounting
+		  fundamentals in identification of bank distress is essentially
+		  non-existent.
+	      </aside>
+	  </section>
+	  
+	  <section>
+	    <h3>Main hypothesis</h3>
+
+	    <p><i>The level of banks' <u>accounting discretion</u>
+	    is <b>negatively</b> related to the ability of accounting signals to
+	    <u>discriminate between distressed and non-distressed banks</u>.</i>
+	    
+	      <aside class="notes">
+		<p> This brings me to the main premise, that we want to test in
+		  our paper. We expect <i>the level of banks' <u>accounting
+		  discretion</u> to be <b>negatively</b> related to the ability
+		  of accounting signals to
+	    <u>discriminate between distressed and non-distressed banks</u>.</i>
+		
+		<p> The aim, and indeed, the main contribution of our paper is
+		  to document a wide cross-country variation in the
+		  classification performance of standardly used accounting
+		  fundamentals, and to show that this variation can be largely
+		  explained by the proxies of accounting discretion.
+	      </aside>
+	  </section>
+	</section>
+
+	<section>
+	  <section>
+	    <h2>Empirical Approach</h2>
+	    <aside class="notes">
+	      Let me give you a brief outline of our empirical approach
+	    </aside>
+	  </section>
+	  
+	  <section>
+	    <ol>
+	      <li> Construct a comprehensive database of bank distress events
+		<ul>
+		  <li> Western Europe and the U.S.
+		  <li> Distress events: <u>bank closures</u> and <u>open-bank resolutions</u>
+		</ul>
+	      <li> Examine the <u>drivers of bank distress</u>.
+	      <li> Document the <u>cross-country variation</u> in the ability of
+	      accounting fundamentals to discriminate between distressed and non
+	      distressed banks.
+	      <li> Test the association between <u>bank disclosure quality</u>
+	      and <u>discriminative ability</u> of accounting signals.
+	    </ol>
+	    
+	    <aside class="notes">
+	      <p> To set the stage, we construct a comprehensive database of
+	      bank distress events in Western Europe and the U.S. during the
+	      period 2007-12. We categorize events into two broad groups of bank
+	      resolution: (1) bank closures, corresponding to resolutions in
+	      which distressed banks cease to exist as independent entities, and
+	      (2) open-bank resolutions, in which banks are allowed to continue
+	      operating with the assistance of a government bail-out. 
+
+	      <p> We analyze the drivers of bank distress by modelling the two
+	      competing groups of distressed bank resolutions in a logistic
+	      regression framework. In our benchmark specifications we test
+	      for a number of bank-specific variables, including size,
+	      regulatory capital, asset quality, liquidity, franchise, or
+	      charter value1, and funding costs.
+
+	      <p> Next, we assess the classification performance of accounting
+	      fundamentals and of accounting-based models within different
+	      countries in our sample. We also test the ability of aggregated
+	      accounting measures reported in the fiscal year before the
+	      financial crisis to anticipate the aggregate degree of financial
+	      distress during the crisis years.
+
+	      <p> In the final part of the paper, we look into the association
+	      between information content of accounting fundamentals on one
+	      hand, and measures of accounting discretion on the other. We do so
+	      by exploiting the cross-country variation in the proxies of
+	      national bank disclosure standards and the stringency of their
+	      implementation by the national regulators.
+	    </aside>
+	  </section>
+	</section>
+
+	<section data-background="#FF5C33"> 
+	  <section>
+	    <h2>Preview of Main Results</h2>
+	    <aside class="notes">
+	      Before going further, let me give you a brief preview of the main
+	      results of the paper.
+	    </aside>
+	  </section>
+	  <section> 
+	    <b> Drivers and symptoms of bank distress: </b>
+	    <p>  
+	    <ul> 
+	      <li> regulatory capital (-)
+	      <li> asset quality (-)
+	      <li> charter value (-)
+	      <li> funding costs (+)
+	    </ul>
+
+	    <aside class="notes">
+	      <p> First, examination of determinants and/or symptoms of bank
+	      distress events reveals that bank distress tends to occur in
+	      severely undercapitalized banks with poor asset quality
+	      (measured by the reported risk-weighted assets and loan
+	      impairments), low charter values (proxied by the net-interest
+	      spread), and high funding costs.
+	    </aside>
+	  </section>
+	  <section>  
+	    <b>Information content of accounting fundamentals</b>
+	    <ol> 
+	      <li>  Substantial cross-country variation in the bank distress
+		classification performance.
+	      <li> At the country level, accounting fundamentals reported in the
+		pre-crisis years of 2006 and 2007, fail to explain the 2007-10
+		aggregate incidence of bank distress across countries.
+	      </li>
+	    </ol>
+
+	    <aside class="notes">
+	      <p> Second, we document a substantial cross-country variation in the
+	      bank distress classification performance within the countries
+	      included in our sample.
+
+	      <p> We also show that when aggregated at the country level,
+	      accounting fundamentals reported in the pre-crisis fiscal years
+	      fail to explain the realized aggregate incidence of bank distress
+	      during the crisis period of 2007-10.
+	    </aside>
+
+	  </section>
+	  <section> 
+	    <b> <u>Accounting discretion</u> and the <u>discriminative ability
+	      of accounting signals</u>.</b>
+	    <ul>
+	      <li>Accounting signals of bank distress tend to be stronger in
+		countries with strong disclosure laws or with more stringent
+		enforcement of the existing laws.
+	      <li>Accounting discretion/informativeness nexus holds when
+		looking at the time series movements in accounting
+		fundamentals at the level of distressed banks prior to the
+		distress event.
+	    </ul>
+
+	    <aside class="notes">
+	      <p> In the final part of the paper we test for the association
+	      between accounting discretion and the classification performance
+	      of accounting fundamentals and show that:
+
+	      <p>first, accounting signals of bank distress tend to be stronger in
+		countries with strong disclosure laws or with more stringent
+		enforcement of the existing laws.
+	      <p>second, accounting discretion/informativeness nexus holds when
+		looking at the time series movements in accounting
+		fundamentals at the level of distressed banks prior to the
+		distress event.
+	      <p> Taken as a whole, the evidence in this paper supports the
+		often heard belief that excessive flexibility in financial
+		reporting undermines the ability of accounting signals to
+		accurately capture the underlying financial health of banks.
+	    </aside>
+	  </section>
+
+	  <!-- <section> -->
+	  <!--   <h2>Summary</h2> -->
+	  <!--   <ul> -->
+	  <!--     <li> The evidence in this paper supports the oft-voiced belief -->
+	  <!-- 	that excessive flexibility in financial reporting undermines the -->
+	  <!-- 	ability of accounting signals to accurately capture the underlying -->
+	  <!-- 	financial health of banks.  -->
+	  <!--     <li> Obliqueness of the distressed banks' accounting signals makes -->
+	  <!-- 	such information less useful for investors and regulators.  -->
+	  <!--     <li> The information content of accounting fundamentals, at least -->
+	  <!-- 	with respect to the identification of distressed banks, might be -->
+	  <!-- 	improved by increased stringency of bank disclosure laws and their -->
+	  <!-- 	enforcement. -->
+	  <!--   </ul> -->
+	  <!-- </section> -->
+	</section>
+
+
+	<section>
+	  <section>
+	    <h2>Literature</h2>
+
+	    <aside class="notes">	
+	      <p> A few words about literature..
+	    </aside>
+	  </section>
+
+	  <section>
+	    <ol>
+	      <li class="fragment"> <b>Bank distress prediction during the recent
+		  financial crisis</b>
+		<ul>
+		  <li> E.g. Betz, Oprica, Peltonen, and Sarlin (2014); Cipollini and
+		    Fiordelisi (2012); Cihak and Poghosyan (2009)
+		</ul>
+	      <li class="fragment"> <b>Information value of accounting
+		  disclosure</b>
+		<ul>
+		  <li>  Healy and Palepu (2001); Beyer, Cohen, Lys, and Walther
+		    (2010);  Altman, Gande, and Saunders (2010) 
+		</ul>
+	      <li class="fragment"> <b>Accounting discretion and the
+		  informativeness of accounting signals</b>
+		<ul>
+		  <li>  Beaver, Correia, and McNichols (2012)
+		</ul>
+	    </ol>
+	  </section>
+	</section>
+
+
+	<section>
+	  <section>
+	    <h2>Bank Distress During 2007-12</h2>
+	    <aside class="notes">
+	      <p> The subsequent analysis in the paper relies on the
+	      comprehensive database of distressed bank resolutions during the
+	      2007-12 crisis, that we manually build from a multitude of
+	      different sources. 
+	    </aside>
+	  </section>
+	  <section>
+	    <h3>Bank Distress Events</h3>
+	    <ul>
+	      <li> <b>Bank closure</b>: 
+		<small><ul>
+		  <li> Charter of the bank is revoked.
+		  <li> <b>Includes</b>: liquidations, court bankruptcies, regulatory
+		      receiverships, distressed mergers (mergers, in which the
+		      acquired entity's regulatory Tier 1 capital ratio falls below
+		      the Basel II threshold of 6% prior to the merger).
+		  <li> <b>Source:</b>FDIC, Bankscope, SNL Financial, LexisNexis.
+		</ul></small>
+	      <li> <b>Open-bank resolution</b>: 
+		<small><ul>
+		  <li> Charter of the bank is preserved, and the institution
+		      continues to operate as the independent entity.
+		  <li> <b>Includes</b>: government bailout (e.g. investment in
+		      bank capital), coupled with a set of measures to improve the
+		      long-term viability of the bank (e.g. reallocation of the
+		      toxic assets to a bad bank).
+		  <li> <b>Source in U.S.</b>: bank equity infusions under the
+		      Capital Assistance Program (CAP) of TARP.
+		  <li> <b>Source in Europe</b>: State Aid cases from the European
+		    Commission.
+		</ul></small>
+	    </ul>
+
+	    <aside class="notes">
+	      <p> We consider the following two types of bank distress
+	      events.[Show slides!]
+	    </aside>
+	  </section>
+	  <section>
+	    <img src="./img/1.png">
+	    <aside class="notes">
+	      <p>Table 1 provides a top-down view of the bank distress
+		database. Several interesting observations emerge from the
+		table.
+
+	      <p>First, bank distress has been pervasive during the crisis: in
+		the countries under study, the assets attributed to banks in
+		distress represented on average about 30% of the total
+		commercial banking assets4, ranging from 5% in Lux- embourg to
+		87% in Greece.
+
+	      <p>Second, banks resolved via closure tend to be smaller on an
+		individual as well as on aggregate basis, compared to banks
+		resolved via open-bank assis- tance. The average size of a
+		closed bank in Europe (the U.S.) is about 39 billion USD (7
+		billion USD), whereas the average size of a bank resolved via
+		open-bank assistance is 190 billion USD in Europe and 45 billion
+		USD in the U.S. In aggregate terms, bank closures represent
+		about 15% (30%) of distressed bank assets in Europe
+		(respectively, the U.S.).
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h3>Sample</h3>
+
+	    <ol>
+	      <li> <u>U.S.</u> and <u>15 Western European countries</u>
+	      <li> Balance sheet data from <b>Bankscope</b>
+	      <li> Bank types: (1) bank holding companies, (2) commercial banks,
+	      (3) cooperative banks, (4) mortgage banks, and (5) savings banks.
+	      <li> Accounting figures at the highest level of conolidation.
+	      <li> <u>Selection of accounting fundamentals:</u> representative
+	      variables from the CAMEL dimensions
+		<small><ul>
+		    <li> <b>C</b>apital adequacy, <b>A</b>sset quality, <b>M</b>anagement quality,
+		    <b>E</b>arnings, <b>L</b>iquidity, and <b>S</b>ensitivity to market risk
+		</ul></small>
+	    </ol>
+	  </section>
+
+	  <section>
+	    <img src="./img/13.png">
+	  </section>
+
+	</section>
+
+
+	<section>	
+	  <section>
+	    <h2>Drivers and Symptoms of Bank Distress</h2>
+	    <aside class="notes">
+	      In the first part of our analysis, we examine drivers and symptoms
+	      of bank distress.
+	    </aside>
+	  </section>  
+	  <section>
+	    <h3>Time Path of Accounting Fundamentals Around Distress Events</h3>
+	    <small> 
+	      <ul>
+		<li> <b>Aim:</b> identify the performance dimensions in
+		  which distressed banks diverge from their non-distressed peers
+		  and shed light on the possible drivers/symptoms of bank
+		  distress.
+		<li> <b>Estimate</b>: $$ y_{ict} = \alpha_{ct} + \sum_{j =
+		  0}^n \phi_{j} f^j_{ict} + \epsilon_{ict},$$ where $y$ is a
+		  bank-specific performance measure of interest (standardized),
+		  $f^j_{ict}$ is an indicator of bank $i$ becoming distressed within
+		  $[j,j+1)$ year from time $t$, and $i$, $c$, $t$ denote firm,
+		  country, and time indices, respectively.
+		<li> Bank performance measures, $y_{ict}$, are a selection of
+		  CAMEL indicators.
+	      </ul>
+	    </small>
+
+	    <aside class="notes">
+	      <p> We begin by analyzing developments in a selection of
+		bank accounting measures in the periods leading up to the a
+		distress event.
+
+	      <p> We do so by estimating the following specification [show on
+		slide], where f are dummies denoting each year to distress (0
+		indicating the time of event) and $\alpha_{ct}$ denotes the
+		country-year specific effects. We estimate the specification for
+		each selected accounting ratio individually, and plot the
+		resulting $\phi$ coefficients together with their corresponding
+		standard errors.
+		
+	      <p>Each of the accounting variables is standardized to have a zero
+		mean and variance of one, implying the following interpretation of
+		a coefficient $\phi_j$ : banks experiencing distress event between j and
+		j + 1 years in the future display on average $\phi_j$ standard deviations
+		higher or lower value of y than their non-distressed peers,
+		controlling for country-year specific trends.
+	    </aside>
+	  </section>  
+	  <section>
+	    <img src="./img/3.png">
+	    <aside class="notes">
+	      <p>The most important result relates to bank capitalization:
+		distressed banks in both Europe and the U.S. tend to be
+		significantly under-capitalized with respect to their
+		non-distressed peers.
+
+	      <p>The economic magnitude of the result is especially big for
+		bank closures, with the distressed/non-distressed Tier 1 capital
+		lag reaching 0.4 standard deviations in a year before the
+		distress event. 
+
+	      <p>In Europe, the relative Tier 1 under-capitalization of
+		distressed banks spans the period of at least 5 years before the
+		distress event, while in the U.S. the under-performance is
+		particularly notable during the three years before the
+		event. Finally, U.S. distressed banks undergoing an open-bank
+		resolutions are on aver- age significantly better capitalized
+		than their European counterparts in the same distress group.
+
+
+	      <p>Decline in Tier 1 capitalization of distressed banks coincides
+		with deterioration in their profitability, particularly for the
+		group of banks that are eventually closed. Deterioration in
+		profitability, in turn, is related to increasing loan-loss
+		provisions and impairment charges, as well as to declining
+		interest margins and operating efficiency (measured by the
+		fraction of non-interest expenses in bank gross revenues). 
+
+	      <p> Finally, a comparison of pre-event trends in accounting
+		fundamentals between banks in Europe and the U.S. reveals a
+		strong deterioration in fundamentals for bank closures in the
+		U.S., whereas no such clear time-pattern is present in Europe. A
+		temporal deterioration in fundamentals of the closed banks in
+		the U.S. is particularly pronounced in the case of Tier 1
+		capital, unreserved impaired loans, loan loss provisions,
+		non-interest expenses, and profitability.
+	    </aside>
+	  </section>
+	  <section>
+	    <img src="./img/4.png">
+	  </section>
+
+	  <section>
+	    <h3>Multivariate Model of Bank Distress</h3>
+	    <p> Model the probability of a bank becoming distressed within one year from
+	      the publishing of its accounting information as a function of the accounting
+	      performance measures analyzed in the previous section.
+
+	      <aside class="notes">
+		<p>After analyzing the univariate divergences between distressed
+		and non-distressed banks for select performance metrics, we now
+		turn to modelling bank distress within a multivariate
+		setting. Specifically, we model the probability of a bank
+		becoming distressed within one year from the publishing of its
+		accounting information as a function of the accounting
+		performance measures analyzed in the previous section.
+	      </aside>
+	  </section>
+	  <section>
+	    $$  Pr(\text{Distressed}_{ict} = 1) = \text{Logit}(\alpha_{ct} + x_{ict}'\theta + \epsilon_{ict} )$$
+	    <img src="./img/5.png">
+
+	    <aside class="notes">
+	      <p> As before, we present results separately for the two types of
+	      distress, as well as for Europe and the U.S. Estimation of
+	      specification in the equation is equivalent to the estimation of
+	      an exponential hazard model, in which a probability of distress
+	      does not depend on the banks' age.
+
+	      <p> Also as before, all explanatory variables are standardized to
+	      have a mean zero and a unit variance, so that the magnitude of the
+	      reported coefficient corresponds to the impact of one standard
+	      deviation increase in the explanatory variable on the log-odds
+	      ratio. Consequently, the absolute magnitude of the coefficient can
+	      be used to judge the relative economic importance of different
+	      variables in the specification.
+
+	      <p> As you can see in the table, the likelihood of bank closure
+		increases with (1) the degree of Tier 1 undercapitalization, (2)
+		asset risk (measured by the ratio of RWA to book assets), (3)
+		the amount of unreserved loan loss impairments, (4) cost of
+		funding, and (5) the degree of operational inefficiency, (6) a
+		decrease in bank profitability, measured by the interest margin,
+		and (7) a decrease in asset liquidity, though the effect of the
+		latter is statistically insignificant.
+
+	      <p> In terms of its explanatory power, the bank closure model
+		explains bank closures with substantially higher degree of
+		accuracy in the U.S. (with pseudo R-squared of 40%) than in
+		Europe (13%). In the light of the univariate dynamics reported
+		in Figure 1 this is not surprising, because most accounting
+		ratios reported by the distressed banks in the U.S. exhibit
+		clear negative trends already several years prior to the
+		distress event. If we change the forecasting horizon in the
+		U.S. to two years in the future, the R-squared of the model
+		drops to around 20%.
+
+	    </aside>
+	  </section>
+	</section>
+
+	<!-- Example of nested vertical slides -->
+	<section>	  
+	  <section>
+	    <h2>Information Content of Bank Accounting Across Countries</h2>
+	    <aside class="notes">	      
+	      <p>The previous section demonstrated that the accounting
+		fundamentals explain a significant proportion of within-country
+		variation in the incidence of bank distress. 
+
+	      <p> We now turn to examine the classification performance of
+	      accounting-based measures within specific countries in our sample.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h3><small>How informative are bank accounting fundamentals in
+	      identifying distressed banks within countries?</small></h3>
+
+	    <aside class="notes"> We begin by asking the following: How informative are bank
+	      accounting fundamentals in identifying distressed banks within
+	      countries?</aside>
+	  </section>
+
+	  <section>
+	    <medium><ul>
+		<li> <b>Objective:</b> Evaluate the informativeness of the accounting-based bank
+		  distress models in discriminating between distressed and
+		  non-distressed banks within each country in our sample.
+		  $$$$
+		<li> The informativeness of a model is measured by <u>the area under
+		  the ROC curve</u>.
+		    <small><ul>
+		      <li> <b>Interpretation</b>: the probability that the randomly
+			chosen distressed bank observations exhibit higher values of
+			the predicted model score than the randomly chosen surviving
+			observation.
+		    </ul></small>
+	    </ul></medium>
+
+	    <aside class="notes">
+	      <p>In this exercise, we evaluate the informativeness of the
+		multivariate bank failure models developed before in
+		discriminating between distressed and non-distressed banks within
+		each country in our sample.
+
+	      <p>The informativeness of a model is measured by the area under
+		the ROC curve12 (henceforth AUC) from a classification exercise
+		in which the model-implied predictions are used to predict bank
+		distress within a specific country. A particularly useful
+		interpretation of the AUC is that it is the probability that the
+		randomly chosen distressed bank observations exhibit higher
+		values of the predicted model score than the randomly chosen
+		surviving observation. At one end of the spectrum, a completely
+		uninformative classifier has the AUC of 0.5, whereas a perfectly
+		predictive classifier has an ROC of 1.
+
+	      <p> We assess the within-country predictive performance of
+		different model predictions, by computing AUCs for each
+		individual country. AUCs are obtained from the non-parametric
+		ROC estimation, using bootstrap.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <img src="./img/6.png">
+	    <aside class="notes">
+	      <p> The table here shows the Areas Under ROC Curve (AUC) for
+		predictors generated by a set of bank failure models, applied to
+		predicting different types of bank distress events (1 year
+		prediction horizon) within a set of 15 Western European
+		Countries and the U.S. in the period 2006-2012.
+
+	      <p> Each column in the table corresponds to the model that is used
+		to generate bank distress predictions. Each model is a logistic
+		regression using the same vector of covariates as the
+		multivariate models discussed before. The models differ in the
+		sample used to estimate the model (i.e Europe, U.S., or both)
+		and in the event that serves as the dependent variable in the
+		model estimation
+
+	      <p> For the sake of brevity, I show only the excerpt from the
+	      table.
+
+	      <p> The main conclusions that emerge from the exercise, and are
+	      important for our subsequent analysis, are the following:
+
+	      <p> Predictions generated by any given model display substantial
+	      cross-country variation in the accuracy of the within-country
+	      forecasts of any of the three types of bank distress events.
+
+	      <p> Some of the countries with consistently low accuracy of
+	      distress predictions include Netherlands, Portugal, Ireland, and
+	      Denmark. In these countries, the accuracy of predictions in
+	      general does not exceed the AUC of 70%, and is, in many cases,
+	      close to the uninformative benchmark of 50%
+
+	      <p> Countries with consistently high levels of accuracy include
+	      the U.S., Austria, France, and Germany. The accuracy of
+	      predictions in these countries is typically above AUC of 80%.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <img src="./img/7.png">
+
+	    <aside class="notes">
+	      <p>In order to examine the sources of poor predictive performance
+		of the accounting-based models in some countries but not others,
+		it is instructive to examine the informativeness of the
+		individual accounting fundamentals that comprise the bank
+		distress models, whose accuracy was estimated in the previous
+		section.
+
+	      <p> For each of the 10 accounting fundamentals used in the models
+		in Table 4 we proceed by computing the country-specific AUC from
+		using the ratio in the prediction of generally- defined distress
+		events (either closure or the open-bank resolution) within 1
+		year in the future. In Figure 2 we plot the resulting AUCs,
+		together with the 95% confidence intervals, for each country and
+		for each accounting fundamental.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h3><small>How informative are the pre-crisis bank accounting figures in
+	      explaining the aggregate incidence of bank distress across countries during
+	      2007-10?</small></h3>
+
+	    <aside class="notes">
+	      <p>Another way to asses the information content of accounting
+		variables is to examine an alternative way to measure the
+		information content of accounting fundamentals. Specifically, we
+		study whether the pre-crisis levels of the accounting
+		fundamentals, when aggregated at the country level, explain the
+		variation in the observed country level of bank distressed
+		assets during the financial crisis episode.
+	    </aside>		
+	  </section>
+
+	  <section>
+	    <small>y ~ country-specific asset share of distressed banks (% of total banking
+	    assets in 2008)</small>
+	    <img src="./img/8.png">
+
+	    <aside class="notes">
+	      <p>Our main dependent variable of interest is the fraction of book
+		assets attributable to banks that became distressed during the
+		period 2008-10 relative to the total amount of banking sector
+		book assets in the fiscal year-end of 2008
+
+	      <p> Having defined the benchmark measure of country-wide bank
+		distress, we now analyze the extent to which the variables that
+		explain the within-country variation also explain the
+		cross-country variation in bank distress.
+
+	      <p> Several observations emerge from the figure. 
+
+	      <p>First, reported Tier 1 and Tier 2 regulatory capital ratios
+		(reported as a fraction of risk-weighted assets) serve as poor
+		predictors of banking problems at the country level. If
+		anything, banks in countries with high rates of distress in
+		2008-10 report on average higher levels of both forms of
+		regulatory capital in years preceding the crisis. 
+		
+	      <p> Apart from the reported asset risk weights, the only bank
+		accounting-based aggregate in 2006 that exhibits a clear
+		relation with the ex-post bank distress in 2008-10 is the
+		net-interest margin. Specifically, countries with banks that
+		reported on average higher net-interest margins in 2006 experi-
+		enced higher incidence of bank distress during 2008-10.
+
+	    </aside>
+	  </section>
+
+	</section>
+
+	<section>
+	  <section>
+	    <h3>Accounting Discretion and the Informativeness of
+	      Bank Accounting Signals</h3>
+
+	    <aside class="notes">
+	      <p> The main conclusion that emerges from the previous analyses is
+		that predictability of bank distress by accounting fundamentals
+		varies substantially across countries.
+
+	      <p> In the final part of the paper, we examine the extent to which
+		this variation in the classification performance can be
+		explained by the variations in accounting discretion, that is,
+		the flexibility of banks with regard to their published
+		accounting numbers.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <p> Predictability of bank distress by accounting fundamentals
+	      varies substantially across countries.
+
+	    <p> Bank management has capacity and incentives to exercise
+	      accounting discretion in order to report inaccurate information.
+
+	    <p>  Bank disclosure standards and their enforcement by regulators
+	      provide a constraint on  accounting discretion and on their
+	      information revelation incentives.
+
+	    <p> <b>Bank disclosures standards and stringness of their
+	    implementation =  proxy of accounting discretion</b>
+
+	    <!-- <p> <b>To what extent do differences in bank disclosure standards -->
+	    <!-- 	and their enforcement by regulators explain differences in -->
+	    <!-- 	accounting informativeness?</b> -->
+	  </section>
+
+	  <section>
+	    <h3>Measurement of Bank Disclosure Standards and Their Enforcement
+	      by the Regulators</h3>
+	    <ul>
+	      <li> Country-specific bank disclosure quality from the database of
+		Barth, Caprio, and Levine (2013).
+		<small><ul>
+		    <li> more than 50 different indices from the
+		      quadrennial World Bank surveys covering 180 countries since
+		      1999.
+		    <!-- <li> For each index, higher values of the index correspond to -->
+		    <!--   either better disclosure standards, or a more stringent -->
+		    <!--   implementation of the standards by the regulator.
+		      -->
+		</ul></small>
+		<!-- <li> Each regulatory index is standardized according to the -->
+		<!-- 	following formula: $$R^*_c = \frac{R_c - min(R)} {max(R) - -->
+		<!-- 	min(R)}\in[0,1],$$. -->
+	    </ul>
+
+	    <aside class="notes">
+	      We obtain a set of proxy measures of country-specific bank
+	      disclosure quality from the database of Barth, Caprio, and Levine
+	      (2013), who compile a set of more than 50 different indices from
+	      the quadrennial World Bank surveys covering 180 countries since
+	      1999. The indices in their database measure several different
+	      aspects of domestic bank regulation, including capital regulation,
+	      disclosure and monitoring environment, failed bank resolu- tion,
+	      bank competition, and supervisory structure. In the following
+	      analysis we only use the subset of indices measuring the quality
+	      of disclosure and monitoring environment.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <img src="./img/9.png">
+	    <p> <small>For each index, higher values of the index correspond to
+	      either better disclosure standards, or a more stringent
+	      implementation of the standards by the regulator. </small>
+	  </section>
+
+	  <section>
+	    <img src="./img/10.png">
+	  </section>
+
+	  <section>
+	    <h3><small>Test 1: Bank Disclosure Quality and Accounting Information
+	      Content in a <u>Cross-Section of Banks</u></small></h3>
+
+		<small><p><b>Hypothesis</b>: Given a cross section of banks in
+		    country $c$ at time $t$, <u>the marginal impact of an accounting
+		      fundamental, $x$, on the probability of bank distress</u>,
+		    increases with the value of the regulatory disclosure index,
+		    $R$.</small>
+
+	      <blockquote>
+		  <small><p>That is: performance of an accounting fundamental
+		    in <u>classifying banks within a country</u> is greatest in
+		    countries with stringent disclosure laws or the enforcement
+		    thereof.</small>
+		</blockquote>
+
+	    <aside class="notes">
+	      
+	    </aside>
+	  </section>
+	  
+	  <section>
+	    <small>
+	      <p> Measure the information of content of an accounting fundamental,
+		$x$, as the absolute magnitude of the marginal impact of $x$ on
+		the probability that a bank becomes distressed 1 year in the
+		future, within a cross section of banks in country $c$ at time
+		$t$:
+		<br/>
+		$$$$
+		$$  INFO_{ct}(x) =\Bigg|\Bigg| \left. \frac{\partial
+		Pr(\text{Distressed}_{ict} = 1)}{\partial x_{ict}}
+		\right|_{\text{c,t fixed}} \Bigg|\Bigg|$$
+
+	      <p> The hypothesis can be restated as:
+		$$$$
+		$$INFO_{ct}(x)\Bigg|_{\substack{\\c\in\text{Good Disclosure
+		Country}}} > INFO_{ct}(x)\Bigg|_{\substack{\\c\in\text{Bad
+		Disclosure Country}}} \geq 0$$
+	    </small>
+
+	    <aside class="notes">
+	      <p> The intuition of the measure is simple: the information value
+		of an accounting fundamental increases with its ability to
+		identify distress in a cross section of banks in a given
+		country-year. In line with the discussion above we expect the
+		informativeness of an accounting measure to be greater in
+		countries with more stringent standards or with more vigilant
+		implementation of the standards by the regulators. Following the
+		previous notation, this can be stated as: [show equation].
+
+	      <p> Notice that the hypothesis does not postulate the direction of
+		the correlation between the accounting signal and bank distress,
+		but concerns only the magnitude of the correspondence. The
+		implications of the hypothesis can be nuanced further, by taking
+		into account the direction of the associations between bank
+		distress and fundamentals, predicted by the banking
+		theory. Theoretically, one expects to observe a negative asso-
+		ciation between bank distress and bank capital (both Tier 1 and
+		Tier 2), and a positive association between bank distress and
+		RWA, unreserved impaired loans, and loan loss provisions. We
+		expect the theoretically predicted direction of the
+		correspondence to be stronger in countries with better
+		disclosure laws, which implies a negative interaction term, for
+		bank capital, and a positive interaction term for RWA,
+		unreserved impaired loans, and loan loss provisions.
+	    </aside>
+	  </section>
+
+	  <section>
+	    <small>$$Pr(D_{ict} = 1) = \text{Logit}(\alpha_{ct} + \theta_1 *
+  x_{ict} + \theta_2 * R_{ct} * x_{ict} + \epsilon_{ict} )$$</small>
+	    <img src="./img/11.png">
+	    <aside class="notes">
+	      <p> This table presents the results of the tests. 
+
+	      <p> We separately estimate the specification for five accounting
+		ratios that are often considered as the most prone to
+		manipulation, namely: (1) Tier 1 capital ratio, (2) Tier 2
+		capital ratio, (3) risk-weighted assets20, (4) unreserved loan
+		losses, and (5) loan loss provisions. Columns 1-7 report the
+		estimates for the regressions with regulatory interactions for
+		each of the disclosure and monitoring indices described before.
+
+	      <p> Estimates reported in different panels come from separate
+		univariate estimations of the specification. Since our
+		regulatory variables are standardized to lie in the range
+		between 0 (worst disclosure quality) and 1 (best disclosures
+		quality), the interpretation of the interaction term coefficient
+		is straight- forward: it represents a change in the marginal
+		contribution of the accounting fundamental on the probability of
+		bank distress as one moves from the worst-disclosure
+		jurisdiction to the best-disclosure jurisdiction.
+
+	      <p> Results are consistent with the disclosure-quality hypothesis
+		for Tier 1 regulatory capi- tal ratio, unreserved loan losses
+		and loan loss provisions. In each of the cases, an accounting
+		signal of bank distress tends to be stronger in countries with
+		strong disclosure laws and/or with more stringent enforcement of
+		the existing laws. Additionally, the direction of the accounting
+		signal in each of the three cases is consistent with the
+		theoretical prior. Specifi- cally, Tier 1 regulatory capital
+		ratio exhibits a negative relation with bank distress, whereas
+		the unreserved loan losses and the loan loss provisions exhibit
+		a positive association.
+
+
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h3><small>Test 2: Bank Disclosure Quality and Accounting
+		Information Content. <u>Within-Firm Evidence</u></small></h3>
+	    
+
+	    <small><p><b>Does a time series of an accounting signal produced by
+		  a distressed bank anticipates the bank's eventual failure?</b>
+	    </small>
+
+	    <blockquote>
+	      <small><p>A signal is judged as informative if its reported value
+		  immediately before the distress period is distinct from its
+		  value in the periods further from the distress event.</small>
+	    </blockquote>
+	  </section>
+
+	  <section>
+	    <small>$$ Pr(D_{ict} = 1) = \text{Logit}(\alpha_{i} + \theta_1 * x_{ict} +
+	    \theta_2 * R_{ct} * x_{ict} + \epsilon_{ict} )$$</small>
+	    <img src="./img/12.png">
+	    <aside class="notes">
+	      <p>The above specification is estimated only on the subsample of
+		banks that become distressed at some point in the sample. The
+		main difference between this and the previous specification is
+		that the latter exploits the within-firm variation to estimate
+		the coefficients, whereas the former relies on the
+		within-country/year variation.
+
+	      <p> The table shows the results of the within-firm estimation. The
+		main conclusions are similar to the previous section. The
+		informativeness of the Tier 1 capital ratio, unreserved loan
+		losses, and loan loss provisions tends to be greater in
+		countries with better disclosure quality. On the other hand, the
+		disclosure-contingent reversion in the association between bank
+		distress and Tier 2 capital is even more pronounced within a
+		firm than in a cross section. Specifically, prior to their
+		distress event, banks in countries with low disclosure quality
+		tend to increase their Tier 2 capital whereas their counterparts
+		in countries with better disclosure quality tend to decrease the
+		reported levels of Tier 2 capital.
+	    </aside>
+	  </section>
+	</section>
+
+
+	<section data-background="#FF5C33">
+	  <h3> Conclusions </h3>
+	  <ul>
+	    <small>
+	      <li class="fragment"> In-depth examination of the information
+		content of the accounting fundamentals in prediction of bank
+		distress during the recent crisis.
+		$$$$
+	      <li class="fragment"> Predictions generated by accounting-based
+		models display a substantial cross-country variation in bank
+		distress classification performance.
+		$$$$
+	      <li class="fragment"> Pre-crisis values of accounting
+		fundamentals, aggregated at the country level, fail to explain
+		the 2007-10 aggregate incidence of bank distress across
+		countries.  
+		$$$$
+	      <li class="fragment"> Accounting signals of bank distress tend to be
+		stronger in countries with strong disclosure laws or with more
+		stringent enforcement of the existing laws.
+	  </ul>
+	  </small>
+
+	  <aside class="notes">
+	    <p> The evidence in this paper supports the often voiced concern that
+	      excessive flexibility in financial reporting undermines the
+	      ability of accounting signals to accurately capture the underlying
+	      financial health of banks. 
+
+	    <p>One may argue that obliqueness of the distressed banks' accounting
+	      signals makes such information less useful for investors and
+	      regulators, and thus has negative regulatory implication. 
+
+	    <p>Perhaps the main implication is that the information content of
+	      accounting fundamentals, at least with respect to the
+	      identification of distressed banks, will be improved by increased
+	      stringency of bank disclosure laws and their enforcement.
+	  </aside>
+	</section>
+
+	<section>
+	  <h1>THE END</h1>
+	  <h3>BY Janko Cizel</h3>
+	  <p> www.jankocizel.com
+	</section>
+
+      </div>
+      
+      <!-- <aside id="presentable-icon" class="revealjs"> -->
+      <!-- 	<a title="Table of Contents" href="#/0/1"> -->
+      <!--     <img alt="Table of Contents" src="presentable/dist/icons/revealjs.png"/> -->
+      <!-- 	</a> -->
+      <!-- </aside> -->
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+      // Parallax scrolling
+      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+      // parallaxBackgroundSize: '2100px 900px',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+      { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'plugin/notes/notes.js', async: true, condition: function() {
+      return !!document.body.classList; } },
+      { src: 'plugin/math/math.js', async: true }
+      ]
+      });
+
+    </script>
+
+  </body>
+</html>
