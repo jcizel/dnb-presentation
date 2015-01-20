@@ -104,8 +104,9 @@
 	    <br>
 	      <ol>
 		<li> The paper
-		<li> On the additive value of the <b>Risk-Weighted
+		<li> The additive value of the <b>Risk-Weighted
 		Framework</b> in the <b>prediction of bank distress</b>
+		<li> LR-Dashboard
 	    </ol>
 	  </section>	  
 	</section>
@@ -237,15 +238,12 @@
 	    </aside>
 	  </section>
 	  
-	  <section>
-	    
-	  </section>
 	</section>
 
 	<!-- <section data-background="#FF5C33">  -->
 	<section> 
 	  <section>
-	    <h2>Preview of Main Results</h2>
+	    <h2>Preview of the Main Results</h2>
 	    <aside class="notes">
 	      Before going further, let me give you a brief preview of the main
 	      results of the paper.
@@ -388,6 +386,33 @@
 	      different sources. 
 	    </aside>
 	  </section>
+
+	  <section>
+	    <img src="./img/1.png">
+	    <aside class="notes">
+	      <p>Table 1 provides a top-down view of the bank distress
+		database. Several interesting observations emerge from the
+		table.
+
+	      <p>First, bank distress has been pervasive during the crisis: in
+		the countries under study, the assets attributed to banks in
+		distress represented on average about 30% of the total
+		commercial banking assets4, ranging from 5% in Lux- embourg to
+		87% in Greece.
+
+	      <p>Second, banks resolved via closure tend to be smaller on an
+		individual as well as on aggregate basis, compared to banks
+		resolved via open-bank assis- tance. The average size of a
+		closed bank in Europe (the U.S.) is about 39 billion USD (7
+		billion USD), whereas the average size of a bank resolved via
+		open-bank assistance is 190 billion USD in Europe and 45 billion
+		USD in the U.S. In aggregate terms, bank closures represent
+		about 15% (30%) of distressed bank assets in Europe
+		(respectively, the U.S.).
+	    </aside>
+	  </section>
+
+
 	  <section>
 	    <h3>Bank Distress Events</h3>
 	    <ul>
@@ -418,30 +443,6 @@
 	    <aside class="notes">
 	      <p> We consider the following two types of bank distress
 	      events.[Show slides!]
-	    </aside>
-	  </section>
-	  <section>
-	    <img src="./img/1.png">
-	    <aside class="notes">
-	      <p>Table 1 provides a top-down view of the bank distress
-		database. Several interesting observations emerge from the
-		table.
-
-	      <p>First, bank distress has been pervasive during the crisis: in
-		the countries under study, the assets attributed to banks in
-		distress represented on average about 30% of the total
-		commercial banking assets4, ranging from 5% in Lux- embourg to
-		87% in Greece.
-
-	      <p>Second, banks resolved via closure tend to be smaller on an
-		individual as well as on aggregate basis, compared to banks
-		resolved via open-bank assis- tance. The average size of a
-		closed bank in Europe (the U.S.) is about 39 billion USD (7
-		billion USD), whereas the average size of a bank resolved via
-		open-bank assistance is 190 billion USD in Europe and 45 billion
-		USD in the U.S. In aggregate terms, bank closures represent
-		about 15% (30%) of distressed bank assets in Europe
-		(respectively, the U.S.).
 	    </aside>
 	  </section>
 
@@ -479,23 +480,28 @@
 	    </aside>
 	  </section>  
 	  <section>
-	    <h3>Time Path of Accounting Fundamentals Around Distress Events</h3>
-	    <small> 
-	      <ul>
-		<li> <b>Aim:</b> identify the performance dimensions in
-		  which distressed banks diverge from their non-distressed peers
-		  and shed light on the possible drivers/symptoms of bank
-		  distress.
-		<li> <b>Estimate</b>: $$ y_{ict} = \alpha_{ct} + \sum_{j =
-		  0}^n \phi_{j} f^j_{ict} + \epsilon_{ict},$$ where $y$ is a
-		  bank-specific performance measure of interest (standardized),
-		  $f^j_{ict}$ is an indicator of bank $i$ becoming distressed within
-		  $[j,j+1)$ year from time $t$, and $i$, $c$, $t$ denote firm,
-		  country, and time indices, respectively.
-		<li> Bank performance measures, $y_{ict}$, are a selection of
-		  CAMEL indicators.
-	      </ul>
-	    </small>
+	    <!-- <h3>Time Path of Accounting Fundamentals Around Distress
+	    Events</h3> -->
+	    <h3>How do distressed banks differ from their non-distressed
+	      counterparts in the years leading to distress?</h3>
+	    <br>
+
+	    <!-- <small>  -->
+	    <!--   <ul> -->
+	    <!-- 	<li> <b>Aim:</b> identify the performance dimensions in -->
+	    <!-- 	  which distressed banks diverge from their non-distressed peers -->
+	    <!-- 	  and shed light on the possible drivers/symptoms of bank -->
+	    <!-- 	  distress. -->
+	    <!-- 	<li> <b>Estimate</b>: $$ y_{ict} = \alpha_{ct} + \sum_{j = -->
+	    <!-- 	  0}^n \phi_{j} f^j_{ict} + \epsilon_{ict},$$ where $y$ is a -->
+	    <!-- 	  bank-specific performance measure of interest (standardized), -->
+	    <!-- 	  $f^j_{ict}$ is an indicator of bank $i$ becoming distressed within -->
+	    <!-- 	  $[j,j+1)$ year from time $t$, and $i$, $c$, $t$ denote firm, -->
+	    <!-- 	  country, and time indices, respectively. -->
+	    <!-- 	<li> Bank performance measures, $y_{ict}$, are a selection of -->
+	    <!-- 	  CAMEL indicators. -->
+	    <!--   </ul> -->
+	    <!-- </small> -->
 
 	    <aside class="notes">
 	      <p> We begin by analyzing developments in a selection of
@@ -519,6 +525,7 @@
 	    </aside>
 	  </section>  
 	  <section>
+	    $$ y_{ict} = \alpha_{ct} + \sum_{j = 0}^n \phi_{j} f^j_{ict} + \epsilon_{ict}$$
 	    <img src="./img/3.png">
 	    <aside class="notes">
 	      <p>The most important result relates to bank capitalization:
@@ -558,15 +565,16 @@
 		non-interest expenses, and profitability.
 	    </aside>
 	  </section>
+
 	  <section>
 	    <img src="./img/4.png">
 	  </section>
 
 	  <section>
 	    <h3>Multivariate Model of Bank Distress</h3>
-	    <p> Model the probability of a bank becoming distressed within one year from
-	      the publishing of its accounting information as a function of the accounting
-	      performance measures analyzed in the previous section.
+	    <!-- <p> Model the probability of a bank becoming distressed within one year from -->
+	    <!--   the publishing of its accounting information as a function of the accounting -->
+	    <!--   performance measures analyzed in the previous section. -->
 
 	      <aside class="notes">
 		<p>After analyzing the univariate divergences between distressed
@@ -636,8 +644,8 @@
 	  </section>
 
 	  <section>
-	    <h3><small>How informative are bank accounting fundamentals in
-	      identifying distressed banks within countries?</small></h3>
+	    <h3>How informative are bank accounting fundamentals in
+	      identifying distressed banks within countries?</h3>
 
 	    <aside class="notes"> We begin by asking the following: How informative are bank
 	      accounting fundamentals in identifying distressed banks within
@@ -645,20 +653,15 @@
 	  </section>
 
 	  <section>
-	    <medium><ul>
-		<li> <b>Objective:</b> Evaluate the informativeness of the accounting-based bank
-		  distress models in discriminating between distressed and
-		  non-distressed banks within each country in our sample.
-		  $$$$
-		<li> The informativeness of a model is measured by <u>the area under
+	    <!-- <ul> -->
+		<!-- <li> <b>Objective:</b> Evaluate the informativeness of the accounting-based bank -->
+		<!--   distress models in discriminating between distressed and -->
+		<!--   non-distressed banks within each country in our sample. -->
+		<!--   $$$$ -->
+		The informativeness of a model is measured by <u>the area under
 		  the ROC curve</u>.
-		    <small><ul>
-		      <li> <b>Interpretation</b>: the probability that the randomly
-			chosen distressed bank observations exhibit higher values of
-			the predicted model score than the randomly chosen surviving
-			observation.
-		    </ul></small>
-	    </ul></medium>
+
+	    <!-- </ul> -->
 
 	    <aside class="notes">
 	      <p>In this exercise, we evaluate the informativeness of the
@@ -745,9 +748,9 @@
 	  </section>
 
 	  <section>
-	    <h3><small>How informative are the pre-crisis bank accounting figures in
+	    <h3>How informative are the pre-crisis bank accounting figures in
 	      explaining the aggregate incidence of bank distress across countries during
-	      2007-10?</small></h3>
+	      2007-10?</h3>
 
 	    <aside class="notes">
 	      <p>Another way to asses the information content of accounting
@@ -1075,7 +1078,14 @@ Measure]}}\frac{\text{[Risk-Insensitive Exposure Measure]}}{\text{RWA}} \\
 
 	</section>
 
-	<section data-background="#FF5C33">
+	<section> 
+	  <a href="https://jcizel87.shinyapps.io/RiskWeightMonitor/">
+	    "Leverage Ratio vs Risk Weights" Analytical Dashboard
+	  </a>
+	</section>
+
+
+	<section>
 	  <h3> Conclusions </h3>
 	  <ul>
 	    <small>
