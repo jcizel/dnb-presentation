@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Anatomy of Bank Distress (Cizel et al, 2014)</title>
+    <title>Additive value of the Risk-Weigted Approach to the Measurement of Bank Capitalization</title>
 
     <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
     <meta name="author" content="Hakim El Hattab">
@@ -15,10 +15,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
 
     <!-- For syntax highlighting -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+    <style type="text/css">
+      .reveal h1,
+      .reveal h2,
+      .reveal h3,
+      .reveal h4,
+      .reveal h5,
+      .reveal h6 {
+      word-wrap: normal;
+      -webkit-hyphens: manual;
+      -moz-hyphens: manual;
+      hyphens: manual;
+      }
+    </style>
+
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -45,8 +61,12 @@
 	<section>
 	  <section>
 	    <h2>Anatomy of Bank Distress </h2>
-	    <h3>The Information Content of Accounting Fundamentals Within and
-	      Across Countries</h3>
+	    <!-- <h3>On the Additive value of the Risk-Weighted Approach to the -->
+	    <!-- Measurement of Bank Capital </h3> -->
+	    <h3>The Information Content of Accounting
+	    Fundamentals </h3>
+	    
+
 	    <p>
 	      <small> By <a href="http://jankocizel.com">Janko Cizel</a> /
 		Edward Altman / Herbert Rijken </small>
@@ -55,9 +75,9 @@
 	    <aside class="notes"> 
 	      <!-- TALK BEGINS WITH THE SESSION LEADER WHO INTRODUCES THE SPEAKER
 		--> 
-	      <p>Thank you.
+	      <p>Thank you for the opportunity to speak in front of you today.
 		
-	      <p>Hi guys. Over this talk, I'll speak about my recent joint paper
+	      <p> Over this talk, I'll speak about my recent joint paper
 		with Ed Altman from the NYU and my supervisor from the VU
 		University in Amsterdam, titled: [Anatomy of ...]. 
 
@@ -75,6 +95,22 @@
 	  <!-- </section> -->
 	</section>
 
+
+	<!-- TABLE OF CONTENTS -->
+
+	<section>
+	  <section>
+	    <h3>Plan</h3>
+	    <br>
+	      <ol>
+		<li> The paper
+		<li> On the additive value of the <b>Risk-Weighted
+		Framework</b> in the <b>prediction of bank distress</b>
+	    </ol>
+	  </section>	  
+	</section>
+
+
 	<section>
 	  <section>
 	    <h2>How reliable is bank accounting disclosure?</h2>
@@ -88,7 +124,7 @@
 	    <h3>Framework</h3>
 
 	    <p class="fragment"> <b>Accounting discretion</b> $\Longrightarrow$
-	    ability to misrepresent true performance
+	    <b>ability</b> to misrepresent true performance
 
 	    <p class="fragment"> <b>Incentives</b> to inflate true performance,
 	    especially in the state of financial distress.
@@ -96,8 +132,8 @@
 	    <p class="fragment"> <b>Consequence</b>: "jamming" of the accounting
 	    signal. 
 
-	    <p class="fragment">In an extreme case, the accounting signal may lose its ability to
-	    discriminate between healthy and unhealthy institutions.
+	    <p class="fragment"><u>In an extreme case, the accounting signal may lose its ability to
+	    discriminate between healthy and unhealthy institutions.</u>
 
 	      <aside class="notes">
 		<p> The way we think about this question is the following.
@@ -130,10 +166,14 @@
 	  
 	  <section>
 	    <h3>Main hypothesis</h3>
+	    <br>
+	    
+	    [Accounting Discretion] $$\propto$$ -[Distress
+	    Prediction Performance of Accounting Variables]  
 
-	    <p><i>The level of banks' <u>accounting discretion</u>
-	    is <b>negatively</b> related to the ability of accounting signals to
-	    <u>discriminate between distressed and non-distressed banks</u>.</i>
+	    <!-- <p><i>The level of banks' <u>accounting discretion</u> -->
+	    <!-- is <b>negatively</b> related to the ability of accounting signals to -->
+	    <!-- <u>discriminate between distressed and non-distressed banks</u>.</i> -->
 	    
 	      <aside class="notes">
 		<p> This brings me to the main premise, that we want to test in
@@ -154,27 +194,17 @@
 	<section>
 	  <section>
 	    <h2>Empirical Approach</h2>
+	    <br>
+	    <ol>
+	      <li> <b>Distressed Bank Event Database</b>
+	      <li> Drivers of bank distress.
+	      <li> Predictive performance of accounting variables <b>across countries</b>
+	      <li> [Accounting Discretion] \(\leftrightarrow\) [Predictability
+	      of Bank Distress]
+	    </ol>
 	    <aside class="notes">
 	      Let me give you a brief outline of our empirical approach
-	    </aside>
-	  </section>
-	  
-	  <section>
-	    <ol>
-	      <li> Construct a comprehensive database of bank distress events
-		<ul>
-		  <li> Western Europe and the U.S.
-		  <li> Distress events: <u>bank closures</u> and <u>open-bank resolutions</u>
-		</ul>
-	      <li> Examine the <u>drivers of bank distress</u>.
-	      <li> Document the <u>cross-country variation</u> in the ability of
-	      accounting fundamentals to discriminate between distressed and non
-	      distressed banks.
-	      <li> Test the association between <u>bank disclosure quality</u>
-	      and <u>discriminative ability</u> of accounting signals.
-	    </ol>
-	    
-	    <aside class="notes">
+
 	      <p> To set the stage, we construct a comprehensive database of
 	      bank distress events in Western Europe and the U.S. during the
 	      period 2007-12. We categorize events into two broad groups of bank
@@ -203,11 +233,17 @@
 	      by exploiting the cross-country variation in the proxies of
 	      national bank disclosure standards and the stringency of their
 	      implementation by the national regulators.
+
 	    </aside>
+	  </section>
+	  
+	  <section>
+	    
 	  </section>
 	</section>
 
-	<section data-background="#FF5C33"> 
+	<!-- <section data-background="#FF5C33">  -->
+	<section> 
 	  <section>
 	    <h2>Preview of Main Results</h2>
 	    <aside class="notes">
@@ -235,10 +271,13 @@
 	    </aside>
 	  </section>
 	  <section>  
-	    <b>Information content of accounting fundamentals</b>
+	    <h3>Information content of accounting fundamentals</h3>
+
+	    <br>
 	    <ol> 
-	      <li>  Substantial cross-country variation in the bank distress
+	      <li>  Large cross-country variation in the bank distress
 		classification performance.
+
 	      <li> At the country level, accounting fundamentals reported in the
 		pre-crisis years of 2006 and 2007, fail to explain the 2007-10
 		aggregate incidence of bank distress across countries.
@@ -258,16 +297,15 @@
 
 	  </section>
 	  <section> 
-	    <b> <u>Accounting discretion</u> and the <u>discriminative ability
-	      of accounting signals</u>.</b>
+	    <h3>[Accounting Discretion] \(\leftrightarrow\) [Predictability
+	      of Bank Distress]</h3>
+
+	    <br>
+
 	    <ul>
-	      <li>Accounting signals of bank distress tend to be stronger in
-		countries with strong disclosure laws or with more stringent
-		enforcement of the existing laws.
-	      <li>Accounting discretion/informativeness nexus holds when
-		looking at the time series movements in accounting
-		fundamentals at the level of distressed banks prior to the
-		distress event.
+	      <li> <b>Better classification performance</b> of accounting
+		variables in countries with strong disclosure laws or with more
+		stringent enforcement of the existing laws.
 	    </ul>
 
 	    <aside class="notes">
@@ -311,12 +349,7 @@
 	  <section>
 	    <h2>Literature</h2>
 
-	    <aside class="notes">	
-	      <p> A few words about literature..
-	    </aside>
-	  </section>
-
-	  <section>
+	    <br>
 	    <ol>
 	      <li class="fragment"> <b>Bank distress prediction during the recent
 		  financial crisis</b>
@@ -336,7 +369,12 @@
 		  <li>  Beaver, Correia, and McNichols (2012)
 		</ul>
 	    </ol>
+
+	    <aside class="notes">	
+	      <p> A few words about literature..
+	    </aside>
 	  </section>
+
 	</section>
 
 
@@ -997,6 +1035,46 @@
 	</section>
 
 
+	<section>
+	  <section>
+	    <h3> On the additive value of <b>Risk-Weighted framework</b> in measuring
+	    bank capital</h3>
+	  </section>
+
+
+	  <section>
+	    <small>
+\begin{align}
+RWCR & =  \frac{\text{Tier 1 Capital}}{\text{RWA}} \\ 
+&=\frac{\text{Tier 1 Capital}}{\text{[Risk-Insensitive Exposure
+Measure]}}\frac{\text{[Risk-Insensitive Exposure Measure]}}{\text{RWA}} \\
+& = [\text{Leverage Ratio}] * 1/[\text{Average Risk Weight}]
+\end{align}
+</small>
+
+	    <aside class="notes">
+	      <p>The central question that guided our research in this project
+	      was this: How reliable is bank accounting disclosure?	    	   
+	    </aside>
+	  </section>
+	  
+	  <section>
+	    <h3>Core Equity over Total Book Assets by Country</h3>
+	    <iframe src="./plots/plot-7.html" width="100%" height="500"></iframe>
+	  </section>
+
+	  <section>
+	    <h3>Tier 1 Regulatory Capital Ratios by Country</h3>
+	    <iframe src="./plots/plot-8.html" width="100%" height="500"></iframe>
+	  </section>
+
+	  <section>
+	    <h3>Asset Risk Weights by Country</h3>
+	    <iframe src="./plots/plot-9.html" width="100%" height="500"></iframe>
+	  </section>
+
+	</section>
+
 	<section data-background="#FF5C33">
 	  <h3> Conclusions </h3>
 	  <ul>
@@ -1067,7 +1145,8 @@
       center: true,
 
       theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+      <!-- transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none -->
+      transition: 'none',
 
       // Parallax scrolling
       // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
