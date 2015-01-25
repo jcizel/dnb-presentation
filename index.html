@@ -93,9 +93,10 @@
 	  <section>
 	    <h3>Introduction</h3>
 	    <br>
-	    <ol>
-	      <li> Banks posses substential discretion in their disclosure to
-	      investors and regulators...
+	    <ul>
+	      <li> <b>Reporting discretion:</b>
+		<p>Banks posses substantial
+	      discretion in their disclosure to investors and regulators...
 		<ul>
 		  <li> Basel II \(\Longrightarrow\) IRB
 		  <li> Loan-loss provisioning
@@ -103,44 +104,61 @@
 		</ul>
 		<br>
 
-	      <li> Weak banks might have an incentive to strategically use
-	      discretion to inflate their reported performance.
+	      <li> <b>Strategic use of discretion</b>
+		<p>Weak banks might have an incentive to use discretion to
+	      improve their reported performance.
 		<ul>
 		  <li> Blum (2008, JBF)
 		  <li> Mariathasan (2014, JFI)
 		</ul>
 		<br>
 
-	      <li> Implications:
-		<ul>
-		  <li> Lower information content of bank disclosure
-		  ("signal-jamming")
-		  <li> Excessive leverage
-		</ul>
-	    </ol>
+	      <!-- <li> Implications: -->
+	      <!-- 	<ul> -->
+	      <!-- 	  <li> Lower information content of bank disclosure -->
+	      <!-- 	  ("signal-jamming") -->
+	      <!-- 	  <li> Excessive leverage -->
+	      <!-- 	</ul> -->
+	    </ul>
 
+	  </section>
+
+	  <section>
+	    <h3>Intro (cont.)</h3>
+	    <br>
+	    <br>
+	    <ul>
+	      <li> Implications of the strategic use of discretion: 
+		<ul> 
+	    	  <li> <b>information content of bank disclosure</b> \(\Downarrow\)
+	    	    <p>("signal-jamming") 
+	    	  <li> Excessive leverage 
+		    <p>(RWCR less binding)
+	    </ul> </ul>
 	  </section>
 
 	  <section>
 	    <h3>This presentation</h3>
 	    
 	    <br>
-	    <p><b>Appetizer:</b>
-	    <p>Empirical evidence on the link between <b>accounting discretion</b>
-	      and the <b>quality of bank disclosure</b>.
+	    <p><b>Part I:</b>
+	    <!-- <p>Empirical evidence on the link between <b>accounting discretion</b> -->
+	    <!--   and the <b>quality of bank disclosure</b>. -->
+	    <p><b>Accounting Discretion</b> and the <b>Quality of Bank Disclosure</b>.
 
 	    <br>
 	    <br>
-	    <p><b>Entree: LR vs RWCR</b>
-	    <p> New evidence on the additive information value of RW (relative
-	    to LR).
-	    <p> Evidence on channels via which discretion might be decreasing
-	    the information value of RW.
+	    <p><b>Part II: LR vs RWCR</b>
+	    <p> Evidence on the strategic reporting of Basel RW
+	    <!-- <p> New evidence on the additive information value of RW (relative -->
+	    <!-- to LR). -->
+	    <!-- <p> Evidence on channels via which discretion might be decreasing -->
+	    <!-- the information value of RW. -->
 
 	    <br>
 	    <br>
-	    <p><b>Dessert </b>
-	    <p> Introduction of the LR Dashboard (alpha).
+	    <p><b>Part III</b>
+	    <p> Introduction of the RWCR Analytical  Dashboard (jcizel87.shinyapps.io/RiskWeightMonitor/).
 	      
 	    
 	  </section>
@@ -158,18 +176,25 @@
 	  <section>
 	    <h3>On measuring the quality of bank disclosure...</h3>
 	    <br>
-	    <br>
-	    <p> Bank disclosure is informative insofar as it can distinguish
-	    between financially weak and healthy institutions.
+	    <!-- <br> -->
+	    <p> <u>Bank disclosure is informative to the extent that it can distinguish
+	    between financially weak and healthy institutions.</u>
 
-	      <br>
+	      <br> 
 	      <br>
 	      <p>$$P(\text{Distress}) = f(\text{Fundamentals})$$
 
-	      <br>
-	      <p>If: $$\text{Fundamentals} \sim \text{Disclosure}$$
-	      <br>
-	      <p>Then: $$P(\text{Distress}) \sim f(\text{Disclosure})$$
+	      <br> 
+	      <!-- <small>	       -->
+		<ul>
+		  <li> Fundamentals unobservable
+		  <li> Proxied by bank disclosure (observable)
+		  <li> Also observable: bank failure
+		    <p>(manifestation of bad fundamentals)
+	      </ul>
+	      <!-- </small> -->
+
+	      <p>$$P(\text{Distress}) \stackrel{?}{=} f(\text{Disclosure})$$
 
 	  </section>
 
@@ -178,9 +203,9 @@
 	      substantially across countries...</h3>
 	  </section>
 
-	  <section>
-	    <img src="./img/6.png">
-	  </section>
+	  <!-- <section> -->
+	  <!--   <img src="./img/6.png"> -->
+	  <!-- </section> -->
 
 	  <section>
 	    <img src="./img/7.png">
@@ -197,39 +222,76 @@
 	    <br>
 	    <br>
 	    <p><b>Main Hypothesis</b>
-	    <p> Banks residing in jurisdictions with lax disclosure rules or
-	    non-stringent enforcement of the rules by the regulators, exhibit
-	    lower quality disclosure.
-	      <br>
-	      <br>
-	    <p> <b>This should be reflected in the reduced ability of their disclosure to
-	    anticipate financial distress.</b>
+	    <!-- <p> Banks residing in jurisdictions with lax disclosure rules or -->
+	    <!-- non-stringent enforcement of the rules by the regulators, exhibit -->
+	    <!-- lower quality disclosure. -->
+
+	    <p> Lax disclosure rules and enforcement $$\rightarrow$$ information
+	      content of bank disclosure \(\downarrow\) $$\rightarrow$$
+	      (classification performance of disclosure \(\downarrow\))
+	      <!-- <br> -->
+	      <!-- <br> -->
+	    <!-- <p> <b>This should be reflected in the reduced ability of their disclosure to -->
+	    <!-- anticipate financial distress.</b> -->
 	  </section>
 
 	  <section>
-	    <h3>Measuring bank discretion...</h3>
-	    <img src="./img/9.png">
-	    <p> <small>For each index, higher values of the index correspond to
-	      either better disclosure standards, or a more stringent
-	      implementation of the standards by the regulator. </small>
+	    <h3>Measuring reporting discretion...</h3>
+	    <br>
+	    <br>
+	    <p> <u>Barth, Caprio, and Levine (2013)</u>
+	    <br>
+	    <br>
+	    <ul>
+	      <li> About 50 measures related to domestic bank
+	      regulation/supervision
+	      <li> 180 countries, 1999-2013
+	      <li> Based on World Bank quadrennial surveys of national bank regulators 
+	    </ul>
+	    <br>
+	    <br>
+
+	    <p> We focus at the set of <b>measures on the strictness of disclosure
+	    laws, monitoring intensity by the regulators </b>(requirements on
+	    audits, etc.)
+
+	    <p> <b>regulatory index (R) \(\uparrow\) \(\rightarrow\) reporting
+	    discretion\(\downarrow\) </b>
+
+	    <!-- <img src="./img/9.png"> -->
+	    <!-- <p> <small>For each index, higher values of the index correspond to -->
+	    <!--   either better disclosure standards, or a more stringent -->
+	    <!--   implementation of the standards by the regulator. </small> -->
+	  </section>
+
+	  <section>
+	    <h3>Test of the hypothesis
+	      <p> <b>reporting discretion \(\uparrow\) \(\rightarrow\) info
+	      content \(\downarrow\)</b>
+
+	    </h3>
 	  </section>
 
 	  <section>
 	    <h3>Cross-sectional test</h3>
 	    <br>
 	    <br>
-	    <p> Looking at the banks in <u>a given country-year</u>:
-	    <p><b>Is the information content of the accounting signal greater
-	    in countries with better disclosure?</b>
-	      <br>
-	      <br>
-	    <p>Information content \(\approx\) magnitude of the loading on an
-	    accounting variable in a distress-prediction specification that
-	    controls for <u>country-year fixed effects</u>
-	      <br>
-	      <br>
-	    <p> <b>Loading expected to be greater (in absolute magnitude) in
-	    countries with more reporting discretion.</b>
+	    <p> <b>strictness of disclosure standards, R\(\uparrow\) $$\rightarrow$$
+	    ability to predict distress in a <u>cross-section of banks in country c
+	    at time t</u>\(\uparrow\)</b>
+
+	    <br>
+	    <br>
+	    \begin{align}
+	    Pr(\text{Distressed}_{ict} = 1) & = \text{Logit}(\alpha_{ct} + x_{ict}'\theta
+	    +
+	    \epsilon_{ict})\\
+	    & = \text{Logit}(\alpha_{ct} + x_{ict}*(\phi_1 + \phi_2 R_{ct}) +   \epsilon_{ict})\\
+	    & = \text{Logit}(\alpha_{ct} + \phi_1*x_{ict} + \phi_2*R_{ct}*x_{ict} + 
+	    \epsilon_{ict})
+
+	    \end{align}
+	    <p> Test: $$|\phi_1 + \phi_2|>|\phi_1|$$
 
 	  </section>
 	  
@@ -240,24 +302,47 @@
 	  </section>
 
 	  <section>
-	    <h3>Time series test</h3>
+	    <h3>Time-series test</h3>
 	    <br>
 	    <br>
-	    <p> Looking at the temporal movement in disclosure within the banks
-	      that eventually become distressed:
-	    <p><b>Do banks signal their impending distress better in countries
-		with less reporting discretion?</b>
-	      <br>
-	      <br>
-	    <p>Information content \(\approx\) magnitude of the loading on an
-	    accounting variable in a distress-prediction specification that
-	    controls for <u>bank-fixed effects</u>
-	      <br>
-	      <br>
-	    <p> <b>Loading expected to be greater (in absolute magnitude) in
-	    countries with more reporting discretion.</b>
+	    <p> <b>strictness of disclosure standards, R\(\uparrow\) $$\rightarrow$$
+	    quality of a failed bank's signal of its impending distress prior
+	    to failure</u>\(\uparrow\)</b>
+
+	    <br>
+	    <br>
+	    \begin{align}
+	    Pr(\text{Distressed}_{ict} = 1) & = \text{Logit}(\alpha_{i} + x_{ict}'\theta
+	    +
+	    \epsilon_{ict})\\
+	    & = \text{Logit}(\alpha_{i} + x_{ict}*(\phi_1 + \phi_2 R_{ct}) +   \epsilon_{ict})\\
+	    & = \text{Logit}(\alpha_{i} + \phi_1*x_{ict} + \phi_2*R_{ct}*x_{ict} + 
+	    \epsilon_{ict})
+
+	    \end{align}
+	    <p> Test: $$|\phi_1 + \phi_2|>|\phi_1|$$
 
 	  </section>
+
+	  <!-- <section> -->
+	  <!--   <h3>Time series test</h3> -->
+	  <!--   <br> -->
+	  <!--   <br> -->
+	  <!--   <p> Looking at the temporal movement in disclosure within the banks -->
+	  <!--     that eventually become distressed: -->
+	  <!--   <p><b>Do banks signal their impending distress better in countries -->
+	  <!-- 	with less reporting discretion?</b> -->
+	  <!--     <br> -->
+	  <!--     <br> -->
+	  <!--   <p>Information content \(\approx\) magnitude of the loading on an -->
+	  <!--   accounting variable in a distress-prediction specification that -->
+	  <!--   controls for <u>bank-fixed effects</u> -->
+	  <!--     <br> -->
+	  <!--     <br> -->
+	  <!--   <p> <b>Loading expected to be greater (in absolute magnitude) in -->
+	  <!--   countries with more reporting discretion.</b> -->
+
+	  <!-- </section> -->
 
 
 	  <section>
@@ -315,8 +400,7 @@
 	    <!-- <br> -->
 	    <!-- <br> -->
 	    <p> <b>Result 1:</b> For a subset of distressed banks, prior to
-	    distress: (1) negative trend in LR, (2) negative trend in RW, (3)
-	    relatively constant RWCR.
+	    distress: (1) negative trend in LR, (2) negative trend in RW
 	    <p> <b>Result 2:</b> LR explains substantially larger fraction of
 	      observed distress than RW 
 	    <p> (RW does have some, albeit small relative contribution)
@@ -334,12 +418,41 @@
 	  </section>
 
 	  <section>
+	    <h3>Aggregate Dynamics of LR and RW in Europe</h3>
+	  </section>
+
+	  <section>
+            <iframe src="./plots/equity.html" width="130%" height="900"></iframe>
+	  </section>
+
+	  <section>
+            <iframe src="./plots/rwa.html" width="130%" height="900"></iframe>
+	  </section>
+
+	  <section>
 	    <h3>A. Relative performance of LR and RW in the prediction of bank
 	    distress</h3>
 	  </section>
 
 	  <section>
+	    <h3>Dynamics of LR and RW prior do distress</h3>
+	    <br>
+	    <br>
+	    <ol>
+	      <li> standardize LR and RW within each country-year
+	      <li> aggregate by the number of years until distress event
+	      <li> plot... (interpretation of y-axis: # of SD from the non-distressed peers)
+	    </ol>
+	  </section>
+
+
+
+	  <section>
 	    <img src="./img/100.png">
+	  </section>
+
+	  <section>
+	    <h3>Distress prediction performance in Eurozone during 2007-12</h3>
 	  </section>
 
 	  <section>
@@ -348,6 +461,38 @@
 
 	  <section>
 	    <h3>B. Time-series behavior of RWCR components at the bank level</h3>
+	  </section>
+
+	  <section>
+	    <p> Theoretically:
+	      <br>
+	      <br>
+	      $$RW = f(\text{Asset Quality})$$
+	    <p> so:
+	      <br>
+	      <br>
+	      $$\Delta[\text{Asset Quality}] \rightarrow \Delta RW$$
+	      $$\Delta E  \rightarrow \Delta RW = 0$$
+	      <br>
+	      <br>
+	    <p> Strategic reporting of RW:
+	      <br>
+	      <br>
+	      $$(\Delta E < 0) \rightarrow (\Delta RW < 0)$$
+	      $$(\Delta E > 0) \rightarrow (\Delta RW \approx 0)$$
+
+	  </section>
+
+	  <section>
+	    <p> Test equation (<b>bank fixed effects</b>):
+	      <br>
+	      <br>
+	      $$[RW]_{it} = \alpha_i + \theta_1[LR]_{it} + \theta_2
+	      [Asset Quality]_{it} + \epsilon_{it}$$
+	      <br>
+	      <br>
+	      <p> <b>Strategic reporting</b> \(\rightarrow\)  \(\theta_1 > 0\)
+	      (especially when \(\Delta E <0\))
 	  </section>
 
 	  <section>
@@ -404,6 +549,7 @@
       progress: true,
       history: true,
       center: true,
+      slideNumber: true,
 
       theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
       <!-- transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none -->
